@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ujian Tengah Semester</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+
+.sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+      }
+      .footer{
+        height:50px;
+        margin-top: 64px;
+    }
+    .content-wrapper{
+        display: none;
+    }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="content-wrapper">
+        <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+            <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">UTS</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">Html</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="css.html">Css</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="js.html">Javascript</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <br>
+        <div class="container mb-5">
+            <div class="row">
+                <!-- <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <nav id="myScrollspy">
+                                <ul class="nav nav-pills flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#introduction">Introduction</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#element">Elements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#attribute">Attributes</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-md-4">
+                    <div class="card border-0 d-none d-md-block shadow-sm sticky">
+                        <img class="card-img-bottom" src="img/html.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">HTML</h4>
+                          <p class="card-text">HyperText Markup Language (HTML) adalah sebuah bahasa markup yang digunakan untuk membuat sebuah halaman web.</p>
+                          <a href="html.html" class="btn btn-danger">See More</a>
+                        </div>
+                    </div>             
+                </div>
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm" id="introduction">
+                        <div class="card-body">
+                            <h4 class="card-title">Javascript</h4>
+                            <div class="text-center mb-3">
+                                <img class="img" src="img/js.jpg" style="width:100%"/>
+                            </div>
+                            <p class="card-text">
+                                Javascript adalah bahasa pemrograman yang awalnya dirancang untuk berjalan di atas browser.
+                                Namun, seiring perkembangan zaman, javascript tidak hanya berjalan di atas browser saja. Javascript juga dapat digunakan pada sisi Server, Game, IoT, Desktop, dsb.                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm" id="elemet">
+                        <div class="card-body">
+                            <h4 class="card-title">Penulisan Javascript pada HTML</h4>
+                            <p class="card-text">
+                                Ada beberapa cara dalam penulisan sintak javascript yaitu:
+                                <ul>
+                                    <li>Embeded</li>
+                                    <li>Inline</li>
+                                    <li>External</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm" id="attribute">
+                        <div class="card-body">
+                            <h4 class="card-title">Penulisan Embeded Javascript</h4>
+                            <p class="card-text">
+                                Pada cara ini, kita menggunakan tag &ltscript&gt untuk menempelkan (embed) kode Javascript pada HTML. Tag ini dapat ditulis di dalam tag &lthead&gt dan &ltbody&gt.
+                                Contoh:                                    
+                            </p>
+                            <textarea disabled="true" rows=19 class="form-control">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Javascript dari Nol</title>
+        <script>
+            // ini adalah penulisan kode javascript
+            // di dalam tag <head>
+            console.log("Hello JS dari Head");
+        </script>
+    </head>
+    <body>
+        <p>Tutorial Javascript untuk Pemula</p>
+        <script>
+            // ini adalah penulisan kode javascript
+            // di dalam tag <body>
+            console.log("Hello JS dari body");
+        </script>
+    </body>
+</html></textarea><br>
+                            <h4 class="card-title">Penulisan Javascript Inline</h4>
+                            <p class="card-text">
+                                Pada cara ini, kita akan menulis kode javascript di dalam atribut HTML. Cara ini biasanya digunakan untuk memanggil suatu fungsi pada event tertentu.
+                            Misal: saat link diklik.
+                            </p>
+                            <textarea disabled="true" class="form-control">
+<a href="#" onclick="alert('Yey!')">Klik aku!</a></textarea>
+                            <p class="card-text">Script tersebut akan berjalan seperti dibawah ini</p>
+                            <a href="#" class="btn btn-sm btn-danger" onclick="alert('Yey!')">Klik aku!</a>
+                            <p class="card-text"><br>
+                                Atribut onclick merupakan atribut HTML untuk menyatakan fungsi yang akan dieksekusi saat elemen itu diklik.
+Pada contoh di atas, kita menjalankan fungsi alert(). Fungsi ini merupakan fungsi untuk menampilkan dialog.
+                            </p>
+                            <br>
+                            <h4>Penulisan Javascript External</h4>
+
+                            <p class="card-text">Pada cara ini, kita akan menulis kode javascript secara terpisah dengan file HTML.
+                                Cara ini biasanya digunakan pada proyek-proyek besar, karena diyakini dengan cara ini dapat lebih mudah mengelola kode project.
+                                Mari kita lihat contohnya
+                                Kita buat dua file, yaitu: file HTML dan Javascript.                                
+                            </p>
+                            <textarea disabled="true" rows=3 class="form-control">
+belajar-js/
+├── kode-program.js
+└── index.html</textarea>
+                            <p class="card-text"><br>Isi dari file kode-program.js:</p>
+                            <textarea disabled="true" class="form-control">
+alert("Hello, ini adalah program JS eksternal!");</textarea>
+                            <p class="card-text"><br>Isi dari file index.html</p>
+                            <textarea disabled="true" rows="11" class="form-control">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Javascript dari Nol</title>
+    </head>
+    <body>
+        <p>Tutorial Javascript untuk Pemula</p>
+        <!-- Menyisipkan kode js eksternal -->
+        <script src="kode-program.js"></script>
+    </body>
+</html></textarea>
+                            <p class="card-text"><br>Maka apabila index.html dijalankan maka akan muncul alert seperti dibawah ini</p>
+                            <img src="img/js-eksternal.png" width="100%"/>
+                            <p class="card-text">
+                               <br> Dari contoh diatas maka dapat disimpulkan bahwa apapun yang ada di dalam file kode-program.js akan dapat dibaca dari file index.html.
+                            </p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer bg-white text-muted">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center p-2">Copyright 2021 &copy; All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="splashscreen">
+        <div class="modal-dialog" style="width: 100%;
+        max-width: none;
+        height: 100%;
+        margin: 0;">
+          <div class="modal-content" style="height: 100%;
+          border: 0;
+          border-radius: 0;">
+          
+    
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="img/loading.gif" style="position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                margin:auto;"/>
+            </div>
+            
+        
+            
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript">
+        $(function(){
+            $("#splashscreen").modal('show');
+            setTimeout(
+            function() 
+            {
+                $("#splashscreen").modal('hide');
+                $(".content-wrapper").show();
+    
+            }, 1300);
+    
+        });
+    
+    </script>
+</body>
+</html>
